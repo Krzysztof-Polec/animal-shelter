@@ -1,0 +1,191 @@
+.salmon-mid{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: linear-gradient(to bottom,#e4edf0 14%, #f9f3ec 14% 79.5%);
+
+    #about{
+        width: 90%;
+        display: flex;
+        background-color: #ffffff;
+        border-radius: 25px;
+        margin-bottom: 7%;
+
+        .about-left-panel{
+            width: 60%;
+            padding: 25px;
+            
+            h1{
+                font-size: 55px;
+                margin-bottom: 30px;
+            }
+
+            p{
+                font-size: 18px;
+                line-height: 1.6;
+
+                &:first-of-type{
+                    margin-bottom: 30px;
+                }
+            }
+        }
+
+        .about-right-panel{
+            width: 50%;
+
+            img{
+                width: 100%;
+                height: 100%;
+                border-top-right-radius: 25px;
+                border-bottom-right-radius: 25px;
+                object-fit: cover;
+                display: block;
+            }
+        }
+    }
+
+    #adopt{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-self: center;
+        margin-bottom: 10%;
+
+        .adopt-header{
+            display: flex;
+            justify-content: center;
+            font-size: 25px;
+            color: #444444;
+            margin-bottom: 40px;
+        }
+
+        .adopt-content{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .adoption-proposal{
+                width: 22%;
+                min-width: 350px;
+
+                .adoption-proposal-header{
+                    width: 100%;
+
+                    img{
+                        width: 100%;
+                        display: block;
+                        border-top-left-radius: 25px;
+                        border-top-right-radius: 25px;
+                        object-fit: cover;
+                    }
+                }
+
+                .adoption-proposal-footer{
+                    background-color: #ffffff;
+                    border-bottom-left-radius: 25px;
+                    border-bottom-right-radius: 25px;
+                    padding: 25px;
+
+                    h1{
+                        color: #444444;
+                        margin-bottom: 15px;
+                    }
+
+                    p{
+                        color: #b8a794;
+                        font-size: 18px;
+                        font-weight: bold;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1660px){
+    .salmon-mid{
+        #adopt{
+            .adopt-content{
+                gap: 100px;
+
+                .adoption-proposal{
+                    width: 44%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1400px){
+    .salmon-mid{
+        #about{
+            flex-direction: column-reverse;
+            
+            .about-left-panel{
+                width: 100%;
+            }
+
+            .about-right-panel{
+                width: 100%;
+                
+                img{
+                    border-radius: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 930px){
+    .salmon-mid{
+        #adopt{
+            .adopt-content{
+                justify-content: center;
+
+                .adoption-proposal{
+                    width: 60%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 550px){
+    .salmon-mid{
+        #about{
+            margin-bottom: 20%;
+
+            .about-left-panel{
+                h1{
+                    font-size: 45px;
+                    margin-top: 10px;
+                }
+
+                p{
+                    line-height: 2;
+                }
+            }
+        }
+
+        #adopt{
+            margin-bottom: 25%;
+
+            .adopt-header{
+                h1{
+                    font-size: 45px;
+                }
+            }
+
+            .adopt-content{
+                .adoption-proposal{
+                    width: 100%;
+                    min-width: 320px;
+                }
+            }
+        }
+    }
+}

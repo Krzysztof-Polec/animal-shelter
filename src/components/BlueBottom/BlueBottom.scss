@@ -1,0 +1,155 @@
+.blue-bottom{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: linear-gradient(to bottom,#f9f3ec 20.5%, #e4edf0 20.5% 79.5%);
+
+    #food-donation{
+        width: 90%;
+        display: flex;
+        background-color: #ffffff;
+        border-radius: 25px;
+        margin-bottom: 9%;
+
+        .food-donation-left-panel{
+            width: 50%;
+
+            img{
+                width: 100%;
+                height: 100%;
+                border-top-left-radius: 25px;
+                border-bottom-left-radius: 25px;
+                object-fit: cover;
+            }
+        }
+
+        .food-donation-right-panel{
+            width: 60%;
+            padding: 25px;
+            
+            h1{
+                font-size: 55px;
+                margin-bottom: 30px;
+            }
+
+            p{
+                font-size: 18px;
+                line-height: 1.6;
+
+                &:first-of-type{
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+
+    #voluntary-organisation{
+        width: 90%;
+        display: flex;
+        background-color: #ffffff;
+        border-radius: 25px;
+        margin-bottom: 7%;
+
+        .voluntary-organisation-left-panel{
+            width: 60%;
+            padding: 25px;
+            
+            h1{
+                font-size: 55px;
+                margin-bottom: 30px;
+            }
+
+            p{
+                font-size: 18px;
+                line-height: 1.6;
+
+                &:first-of-type{
+                    margin-bottom: 30px;
+                }
+            }
+        }
+
+        .voluntary-organisation-right-panel{
+            width: 50%;
+
+            img{
+                width: 100%;
+                height: 100%;
+                border-top-right-radius: 25px;
+                border-bottom-right-radius: 25px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+@media (max-width: 1400px){
+    .blue-bottom{
+        #food-donation{
+            flex-direction: column;
+
+            .food-donation-left-panel{
+                width: 100%;
+
+                img{
+                    border-radius: 25px;
+                }
+            }
+
+            .food-donation-right-panel{
+                width: 100%;
+            }
+        }
+
+        #voluntary-organisation{
+            flex-direction: column-reverse;
+
+            .voluntary-organisation-left-panel{
+                width: 100%;
+            }
+
+            .voluntary-organisation-right-panel{
+                width: 100%;
+
+                img{
+                    border-radius: 25px;
+                }
+            }
+        }
+    }  
+}
+
+@media (max-width: 550px){
+    .blue-bottom{
+        #food-donation{
+            margin-bottom: 25%;
+
+            .food-donation-right-panel{
+                h1{
+                    font-size: 45px;
+                    margin-top: 10px;
+                }
+
+                p{
+                    line-height: 2;
+                }
+            }
+        }
+
+        #voluntary-organisation{
+            margin-bottom: 20%;
+            
+            .voluntary-organisation-left-panel{
+                h1{
+                    font-size: 45px;
+                    margin-top: 10px;
+                }
+
+                p{
+                    line-height: 2;
+                }
+            }
+        }
+    }
+}
