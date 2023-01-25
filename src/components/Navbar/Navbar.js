@@ -8,7 +8,7 @@ const Navbar = () => {
     return(
         <nav>
             <div className="logo">
-                <img src={webLogo}></img>
+                <img src={webLogo} alt="webLogo"></img>
             </div>
             <div className="right-panel">
                 <a href="#about">O schronisku</a>
