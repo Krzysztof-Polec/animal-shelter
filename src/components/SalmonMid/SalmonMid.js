@@ -23,7 +23,7 @@ const SalmonMid = () => {
                     </p>
                 </div>
                 <div className="about-right-panel">
-                    <img src={dog3and4}></img>
+                    <img src={dog3and4} alt="dog3and4"></img>
                 </div>
             </div>
             <div id="adopt">
@@ -33,7 +33,7 @@ const SalmonMid = () => {
                 <div className="adopt-content">
                     <div className="adoption-proposal">
                         <div className="adoption-proposal-header">
-                            <img src={dog3and4}></img>
+                            <img src={dog3and4} alt="dog3and4"></img>
                         </div>
                         <div className="adoption-proposal-footer">
                             <h1>Peepi</h1>
@@ -44,7 +44,7 @@ const SalmonMid = () => {
                     </div>
                     <div className="adoption-proposal">
                         <div className="adoption-proposal-header">
-                            <img src={dog5}></img>
+                            <img src={dog5} alt="dog5"></img>
                         </div>
                         <div className="adoption-proposal-footer">
                             <h1>Lucky</h1>
@@ -55,7 +55,7 @@ const SalmonMid = () => {
                     </div>
                     <div className="adoption-proposal">
                         <div className="adoption-proposal-header">
-                            <img src={dog6}></img>
+                            <img src={dog6} alt="dog6"></img>
                         </div>
                         <div className="adoption-proposal-footer">
                             <h1>Woowe</h1>
@@ -66,7 +66,7 @@ const SalmonMid = () => {
                     </div>
                     <div className="adoption-proposal">
                         <div className="adoption-proposal-header">
-                            <img src={dog7}></img>
+                            <img src={dog7} alt="dog7"></img>
                         </div>
                         <div className="adoption-proposal-footer">
                             <h1>Dogo</h1>

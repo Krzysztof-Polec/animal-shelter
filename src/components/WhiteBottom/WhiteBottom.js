@@ -28,7 +28,7 @@ const WhiteBottom = () => {
                     </div>
                 </div>
                 <div className="footer-right-panel">
-                    <img src={map}></img>
+                    <img src={map} alt="map"></img>
                 </div>
             </div>
         </div>

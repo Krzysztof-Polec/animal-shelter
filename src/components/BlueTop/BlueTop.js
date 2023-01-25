@@ -18,10 +18,10 @@ const BlueTop = () => {
                 </div>
                 <div className="header-info-right-panel">
                     <div className="bottom-image">
-                        <img src={dog1}></img>
+                        <img src={dog1} alt="dog1"></img>
                     </div>
                     <div className="top-image">
-                        <img src={dog2}></img>
+                        <img src={dog2} alt="dog2"></img>
                     </div>
                 </div>
             </div>

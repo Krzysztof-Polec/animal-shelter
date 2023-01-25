@@ -7,7 +7,7 @@ const BlueBottom = () => {
         <div className="blue-bottom">
             <div id="food-donation">
                 <div className="food-donation-left-panel">
-                    <img src={foodDonation}></img>
+                    <img src={foodDonation} alt="foodDonation"></img>
                 </div>
                 <div className="food-donation-right-panel">
                     <h1>Zbiórka jedzenia</h1>
@@ -42,7 +42,7 @@ const BlueBottom = () => {
                     </p>
                 </div>
                 <div className="voluntary-organisation-right-panel">
-                    <img src={dog8}></img>
+                    <img src={dog8} alt="dog8"></img>
                 </div>
             </div>
         </div>
