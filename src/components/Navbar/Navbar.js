@@ -1,4 +1,4 @@
-import {useState} from "react"
+import { useState } from "react"
 import webLogo from "../../images/dog-house.webp"
 import "./Navbar.scss"
 

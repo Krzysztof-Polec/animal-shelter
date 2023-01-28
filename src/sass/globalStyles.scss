@@ -24,3 +24,18 @@
     background-clip: content-box;
     background-color: #e4e4e4;
 }
+
+.reveal{
+    position: relative;
+    opacity: 0;
+
+    &.active {
+        opacity: 1;
+        animation: fade-in 1s ease-in;
+    }
+}
+
+@keyframes fade-in{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}

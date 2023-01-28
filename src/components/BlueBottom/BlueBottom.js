@@ -1,11 +1,14 @@
+import { HandleScroll } from "../../utils/HandleScroll"
 import foodDonation from "../../images/food-donation.webp"
 import dog8 from "../../images/dog8.webp"
 import "./BlueBottom.scss"
 
 const BlueBottom = () => {
+    const revealRefs = HandleScroll()
+
     return(
         <div className="blue-bottom">
-            <div id="food-donation">
+            <div id="food-donation" className="reveal" ref={el => revealRefs.current.push(el)}>
                 <div className="food-donation-left-panel">
                     <img src={foodDonation} alt="foodDonation"></img>
                 </div>
@@ -25,7 +28,7 @@ const BlueBottom = () => {
                     </p>
                 </div>
             </div>
-            <div id="voluntary-organisation">
+            <div id="voluntary-organisation" className="reveal" ref={el => revealRefs.current.push(el)}>
                 <div className="voluntary-organisation-left-panel">
                     <h1>Wolontariat</h1>
                     <p>Miejskie Schronisko dla Bezdomnych Zwierząt działa już od końca lat 80. Jest calkowicie finansowane przez Urząd Miasta

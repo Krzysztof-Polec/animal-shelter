@@ -5,7 +5,7 @@ import "./BlueTop.scss"
 
 const BlueTop = () => {
     return(
-        <header>
+        <header className="reveal active">
             <Navbar></Navbar>
             <div className="header-info">
                 <div className="header-info-left-panel">

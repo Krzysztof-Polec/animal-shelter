@@ -1,9 +1,12 @@
+import { HandleScroll } from "../../utils/HandleScroll"
 import map from "../../images/map.webp"
 import "./WhiteBottom.scss"
 
 const WhiteBottom = () => {
+    const revealRefs = HandleScroll()
+
     return(
-        <div id="white-bottom">
+        <div id="white-bottom" className="reveal" ref={el => revealRefs.current.push(el)}>
             <div className="footer">
                 <div className="footer-left-panel">
                     <h1>Napisz do nas</h1>

@@ -1,3 +1,4 @@
+import { HandleScroll } from "../../utils/HandleScroll"
 import dog3and4 from "../../images/dog3and4.webp"
 import dog5 from "../../images/dog5.webp"
 import dog6 from "../../images/dog6.webp"
@@ -5,9 +6,11 @@ import dog7 from "../../images/dog7.webp"
 import "./SalmonMid.scss"
 
 const SalmonMid = () => {
+    const revealRefs = HandleScroll()
+    
     return(
         <div className="salmon-mid">
-            <div id="about">
+            <div id="about" className="reveal" ref={el => revealRefs.current.push(el)}>
                 <div className="about-left-panel">
                     <h1>O Schronisku</h1>
                     <p>Miejskie Schronisko dla Bezdomnych Zwierząt działa już od końca lat 80. Jest calkowicie finansowane przez Urząd Miasta
@@ -26,7 +29,7 @@ const SalmonMid = () => {
                     <img src={dog3and4} alt="dog3and4"></img>
                 </div>
             </div>
-            <div id="adopt">
+            <div id="adopt" className="reveal" ref={el => revealRefs.current.push(el)}>
                 <div className="adopt-header">
                     <h1>Adoptuj pupila</h1>
                 </div>
