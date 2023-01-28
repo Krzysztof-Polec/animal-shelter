@@ -16,15 +16,15 @@ const WhiteBottom = () => {
                     <textarea placeholder="Treść wiadomości"></textarea>
                     <div className="footer-check">
                         <input type="radio" name="check"></input>
-                        <p>Qui incididunt voluptate enim proident qui nulla aliqua incididunt minim do ea.
+                        <label>Qui incididunt voluptate enim proident qui nulla aliqua incididunt minim do ea.
                             Labore officia labore.
-                        </p>
+                        </label>
                     </div>
                     <div className="footer-check">
                         <input type="radio" name="check"></input>
-                        <p>Qui incididunt voluptate enim proident qui nulla aliqua incididunt minim do ea.
+                        <label>Qui incididunt voluptate enim proident qui nulla aliqua incididunt minim do ea.
                             Labore officia labore.
-                        </p>
+                        </label>
                     </div>
                     <div className="footer-button">
                         <p>Wyślij</p>
